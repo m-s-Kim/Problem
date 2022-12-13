@@ -26,6 +26,8 @@ public class a1 {
 				res = Math.min(MAX_VALUE, cnt);
 			}
 			
+			
+			
 			System.out.println(res);
 			
 			
