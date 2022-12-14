@@ -22,13 +22,8 @@ public class a1 {
 					if(A[j] != B[j+i])
 						cnt++;
 				}
-			
 				res = Math.min(MAX_VALUE, cnt);
 			}
-			
-					
-			
-			
 			
 			System.out.println(res);
 			
