@@ -26,12 +26,7 @@ public class a1 {
 				res = Math.min(MAX_VALUE, cnt);
 			}
 			
-			
-			
-			
-			
-			sadf
-			
+					
 			
 			
 			
