@@ -19,7 +19,6 @@ public class a5 {
             meetTime[i][1] = Integer.parseInt(input[1]); // 끝나는 시간
         }
         
-        
         // 끝나는 시간을 기준으로 오름차순 정렬
         Arrays.sort(meetTime, (o1, o2) -> o1[1] - o2[1]);
         int cnt = 1;
