@@ -31,6 +31,7 @@ public class a5 {
             }
         }
         
+        
         System.out.println(cnt);
     }
 }
