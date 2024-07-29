@@ -8,9 +8,6 @@ public class MyArray<E> {
 	private int size;
 	private int capacity = INIT_CAPACITY;
 	
-	
-	
-	
 	public MyArray() {
 		theData = (E [])new Object[INIT_CAPACITY];
 		size = 0;
