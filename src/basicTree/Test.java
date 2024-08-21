@@ -14,6 +14,8 @@ public class Test {
 		t.preorder(n1);
 		System.out.println("====================");
 		t.postorder(n1);
+		
+		
 	}
 }
 
