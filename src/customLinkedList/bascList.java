@@ -24,6 +24,8 @@ public class bascList {
 		ll.retrieve();;
 		
 		
+		
+		
 	}
 }
 
