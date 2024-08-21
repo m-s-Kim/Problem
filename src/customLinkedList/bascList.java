@@ -22,10 +22,6 @@ public class bascList {
 		System.out.println();
 		ll.removeDups();
 		ll.retrieve();;
-		
-		
-		
-		
 	}
 }
 
