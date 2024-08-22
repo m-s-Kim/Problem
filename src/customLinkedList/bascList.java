@@ -19,6 +19,7 @@ public class bascList {
 		ll.retrieve();;
 		ll.removeDups();
 		ll.retrieve();;
+		
 	}
 }
 
