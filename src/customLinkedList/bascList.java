@@ -17,7 +17,6 @@ public class bascList {
 		ll.delete(2);
 		//ll.retrieve();;
 		ll.retrieve();;
-		System.out.println();
 		ll.removeDups();
 		ll.retrieve();;
 	}
