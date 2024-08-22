@@ -14,7 +14,6 @@ public class bascList {
 		ll.append(6);
 		ll.append(6);
 		ll.append(2);
-		
 		ll.delete(2);
 //		
 		//ll.retrieve();;
