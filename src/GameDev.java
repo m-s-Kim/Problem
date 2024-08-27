@@ -100,7 +100,6 @@ public class GameDev {
 		System.out.println("cnt "+cnt);
 	}
 	
-	
 	// 왼족 으로 돌리기 
 	public static int turn() {
 		direction--;
