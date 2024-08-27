@@ -40,7 +40,7 @@ class Tree{
 		node.left = left;
 		node.right = right;
 		return node;
-	}
+	}    
 	public void inorder(Node node) {
 		if(node != null) {
 			inorder(node.left);

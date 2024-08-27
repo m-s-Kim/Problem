@@ -1,7 +1,10 @@
 package Programmers;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class BiggestNum {
 	public static void main(String[] args) {
@@ -19,18 +22,36 @@ public class BiggestNum {
         for (int i = 0; i < numbers.length; i++) {
             strNumbers[i] = String.valueOf(numbers[i]);
         }
+        
+        
+        List<Integer> list = new ArrayList<>();
+        for(int i = 0; i < numbers.length; i++) {
+            list.add(numbers[i]);
+        }
+        Collections.sort(list, (a, b) -> {
+            String as = String.valueOf(a), bs = String.valueOf(b);
+            return -Integer.compare(Integer.parseInt(as + bs), Integer.parseInt(bs + as));
+        });
+        
 
         // 문자열 배열을 정렬
-        Arrays.sort(strNumbers, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
+//        Arrays.sort(strNumbers, new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//                // 두 문자열을 합쳤을 때 더 큰 수가 되도록 정렬
+//                String order1 = o1 + o2;
+//                String order2 = o2 + o1;
+//                return order2.compareTo(order1);
+//            }
+//        });
+
+        Arrays.sort(strNumbers, (o1, o2)-> {
                 // 두 문자열을 합쳤을 때 더 큰 수가 되도록 정렬
                 String order1 = o1 + o2;
                 String order2 = o2 + o1;
                 return order2.compareTo(order1);
-            }
         });
-
+        
         // 정렬된 배열을 하나의 문자열로 합침
         if (strNumbers[0].equals("0")) {
             return "0"; // 모든 값이 0인 경우
